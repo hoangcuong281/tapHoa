@@ -45,7 +45,6 @@ const testSend = async (req, res) => {
     if (production) {
         return res.status(200).json({ message: "Sản phẩm đã tồn tại", production });
     }
-
     // Nếu chưa có, tạo sản phẩm với tên và giá mặc định
     production = new Production({
         name: "Trà đào KIRIN",
